@@ -125,5 +125,4 @@ RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" \
   && ln -s /usr/local/bin/node /usr/local/bin/nodejs
 
 # Install angular-cli
-USER node
 RUN npm install -g @angular/cli
