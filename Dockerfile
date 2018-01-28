@@ -57,8 +57,8 @@ RUN set -x \
 
 ENV CHROME_BIN /usr/bin/google-chrome
 
-RUN groupadd --gid 1000 node \
-  && useradd --uid 1000 --gid node --shell /bin/bash --create-home node
+RUN groupadd --gid 999 node \
+  && useradd --uid 999 --gid node --shell /bin/bash --create-home node
 
 USER node
 RUN mkdir ~/.npm-global
